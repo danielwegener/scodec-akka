@@ -14,7 +14,8 @@ crossScalaVersions := crossScalaVersions.value.filter { _.startsWith("2.11.") }
 libraryDependencies ++= Seq(
   "org.scodec" %% "scodec-core" % "1.10.0",
   "com.typesafe.akka" %% "akka-stream" % "2.4.4",
-  "org.scalatest" %% "scalatest" % "3.0.0-M7" % "test"
+  "org.scalatest" %% "scalatest" % "3.0.0-M7" % "test",
+  "com.typesafe.akka" %% "akka-stream-testkit" % "2.4.4" % "test"
 )
 
 // Shapeless 2.1.0 on Scala 2.10 requires macro paradise
